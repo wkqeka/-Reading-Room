@@ -7,3 +7,14 @@ C:\Users\young\source\repos\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
 C:\Users\young\source\repos\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
 C:\Users\young\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\young\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\admin\Desktop\3학년1학기\소프트웨어공학\테스팅\git\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\admin\Desktop\3학년1학기\소프트웨어공학\테스팅\git\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\admin\Desktop\3학년1학기\소프트웨어공학\테스팅\git\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\admin\Desktop\3학년1학기\소프트웨어공학\테스팅\git\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\3학년1학기\소프트웨어공학\테스팅\git\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\admin\Desktop\3학년1학기\소프트웨어공학\테스팅\git\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.SeatStatusForm.resources
+C:\Users\admin\Desktop\3학년1학기\소프트웨어공학\테스팅\git\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\admin\Desktop\3학년1학기\소프트웨어공학\테스팅\git\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\3학년1학기\소프트웨어공학\테스팅\git\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\admin\Desktop\3학년1학기\소프트웨어공학\테스팅\git\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\admin\Desktop\3학년1학기\소프트웨어공학\테스팅\git\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Seats.resources
