@@ -16,13 +16,14 @@ namespace WindowsFormsApp5
         {
             InitializeComponent();
         }
+        
         // 아래는 테스트 코드입니다.
         // 함수안의 내용은 아무 의미 없으니 삭제후 사용하시면 됩니다.
         #region 로그인 코드
         private void onLoginClck(object sender, EventArgs e)
         {
             // 로그인 확인
-            bool test = true;
+            bool test = false;
             if (test == true) 
             {
                 // 로그인 성공시 메인화면 진입
@@ -40,6 +41,9 @@ namespace WindowsFormsApp5
         private void onNewAccountClick(object sender, EventArgs e)
         {
             // 회원가입 창 띄움
+            Form LoginSingInUI = new LoginSingInUI();
+            LoginSingInUI.Show();
+            // 회원 가입 창 여러개 뛰우지 않게끔 예외처리 필요
         }
         #endregion
 

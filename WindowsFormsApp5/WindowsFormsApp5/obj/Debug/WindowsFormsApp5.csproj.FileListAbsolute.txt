@@ -8,3 +8,14 @@ C:\Users\715\source\repos\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFor
 C:\Users\715\source\repos\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.CoreCompileInputs.cache
 C:\Users\715\source\repos\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.exe
 C:\Users\715\source\repos\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.pdb
+C:\Users\deu\Desktop\할미새사촌\로그인ui\WindowsFormsApp5\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe.config
+C:\Users\deu\Desktop\할미새사촌\로그인ui\WindowsFormsApp5\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe
+C:\Users\deu\Desktop\할미새사촌\로그인ui\WindowsFormsApp5\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.pdb
+C:\Users\deu\Desktop\할미새사촌\로그인ui\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.AssemblyReference.cache
+C:\Users\deu\Desktop\할미새사촌\로그인ui\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.LoginUI.resources
+C:\Users\deu\Desktop\할미새사촌\로그인ui\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Properties.Resources.resources
+C:\Users\deu\Desktop\할미새사촌\로그인ui\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.GenerateResource.cache
+C:\Users\deu\Desktop\할미새사촌\로그인ui\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.CoreCompileInputs.cache
+C:\Users\deu\Desktop\할미새사촌\로그인ui\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.exe
+C:\Users\deu\Desktop\할미새사촌\로그인ui\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.pdb
+C:\Users\deu\Desktop\할미새사촌\로그인ui\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.LoginSingInUI.resources
