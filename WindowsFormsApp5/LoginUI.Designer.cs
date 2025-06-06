@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp5
+﻿namespace Studyroom_kiosk
 {
     partial class LoginUI
     {

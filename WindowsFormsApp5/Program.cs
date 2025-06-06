@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp5;
 
-namespace WindowsFormsApp5
+namespace Studyroom_kiosk
 {
     internal static class Program
     {
@@ -16,7 +17,7 @@ namespace WindowsFormsApp5
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginUI());
+            Application.Run(new MainUI());
         }
     }
 }

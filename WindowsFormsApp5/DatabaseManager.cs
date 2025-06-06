@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Oracle.ManagedDataAccess.Client;
+using Studyroom_kiosk;
 
-namespace WindowsFormsApp5
+namespace Studyroom_kiosk
 {
     public static class DatabaseManager
     {
@@ -86,6 +87,44 @@ namespace WindowsFormsApp5
                 Console.WriteLine($"[DB ERROR - InsertAccount] {ex.Message}");
                 return false;
             }
+        }
+
+        /// <summary>
+        /// SEATS 테이블에서 모든 좌석 정보를 조회합니다.
+        /// </summary>
+        public static List<Seat> GetAllSeats()
+        {
+            var seats = new List<Seat>();
+            try
+            {
+                using (var conn = new OracleConnection(connectionString))
+                {
+                    conn.Open();
+                    string sql = "SELECT seat_number, status, seat_type FROM SEATS";
+
+                    using (var cmd = new OracleCommand(sql, conn))
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            var seat = new Seat(
+                                reader["seat_number"].ToString(),
+                                reader["status"].ToString(),
+                                reader["seat_type"].ToString(),
+                                "없음",  // reserved_time은 아직 조회하지 않음
+                                reader["seat_type"].ToString()
+                            );
+                            seats.Add(seat);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"[DB ERROR - GetAllSeats] {ex.Message}");
+            }
+
+            return seats;
         }
     }
 }

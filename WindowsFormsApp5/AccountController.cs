@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp5
+namespace Studyroom_kiosk
 {
     public class AccountController
     {
