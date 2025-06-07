@@ -38,8 +38,8 @@
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("굴림", 12F);
-            this.label1.Location = new System.Drawing.Point(246, 149);
+            this.label1.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.Location = new System.Drawing.Point(64, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 25);
             this.label1.TabIndex = 0;
@@ -47,30 +47,31 @@
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("굴림", 12F);
-            this.label2.Location = new System.Drawing.Point(246, 209);
+            this.label2.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label2.Location = new System.Drawing.Point(45, 114);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 25);
+            this.label2.Size = new System.Drawing.Size(99, 33);
             this.label2.TabIndex = 1;
             this.label2.Text = "비밀번호";
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(380, 149);
+            this.txtId.Location = new System.Drawing.Point(208, 49);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(135, 21);
             this.txtId.TabIndex = 2;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(380, 209);
+            this.txtPassword.Location = new System.Drawing.Point(208, 126);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(135, 21);
             this.txtPassword.TabIndex = 3;
             // 
             // newAccountButton
             // 
-            this.newAccountButton.Location = new System.Drawing.Point(235, 294);
+            this.newAccountButton.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.newAccountButton.Location = new System.Drawing.Point(50, 188);
             this.newAccountButton.Name = "newAccountButton";
             this.newAccountButton.Size = new System.Drawing.Size(91, 40);
             this.newAccountButton.TabIndex = 4;
@@ -80,7 +81,8 @@
             // 
             // loginButton
             // 
-            this.loginButton.Location = new System.Drawing.Point(425, 294);
+            this.loginButton.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.loginButton.Location = new System.Drawing.Point(264, 188);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(90, 40);
             this.loginButton.TabIndex = 5;
@@ -92,7 +94,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(406, 247);
             this.Controls.Add(this.loginButton);
             this.Controls.Add(this.newAccountButton);
             this.Controls.Add(this.txtPassword);

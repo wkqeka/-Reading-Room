@@ -91,10 +91,10 @@
             // lblReservedTime
             // 
             this.lblReservedTime.AutoSize = true;
-            this.lblReservedTime.Font = new System.Drawing.Font("맑은 고딕", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblReservedTime.Location = new System.Drawing.Point(32, 239);
+            this.lblReservedTime.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lblReservedTime.Location = new System.Drawing.Point(12, 256);
             this.lblReservedTime.Name = "lblReservedTime";
-            this.lblReservedTime.Size = new System.Drawing.Size(94, 37);
+            this.lblReservedTime.Size = new System.Drawing.Size(73, 30);
             this.lblReservedTime.TabIndex = 5;
             this.lblReservedTime.Text = "label3";
             // 

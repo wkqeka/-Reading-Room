@@ -38,3 +38,4 @@ C:\Users\admin\Desktop\소웨공 프로그램들\STW\WindowsFormsApp5\obj\Debug\
 C:\Users\admin\Desktop\소웨공 프로그램들\STW\WindowsFormsApp5\obj\Debug\Studyroom_kiosk.MainUI.resources
 C:\Users\admin\Desktop\소웨공 프로그램들\STW\WindowsFormsApp5\obj\Debug\Studyroom_kiosk.PaymentCheckUI.resources
 C:\Users\admin\Desktop\소웨공 프로그램들\STW\WindowsFormsApp5\obj\Debug\Studyroom_kiosk.PaymentUI.resources
+C:\Users\admin\Desktop\소웨공 프로그램들\STW\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.BoundaryClass.ReservationUI.resources

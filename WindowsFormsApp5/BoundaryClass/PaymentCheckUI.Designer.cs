@@ -46,6 +46,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.lblFinalPrice = new System.Windows.Forms.Label();
             this.lblPlanPrice = new System.Windows.Forms.Label();
+            this.lblReservationTimeInfo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -84,7 +85,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label3.Location = new System.Drawing.Point(18, 104);
+            this.label3.Location = new System.Drawing.Point(18, 146);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(50, 25);
             this.label3.TabIndex = 4;
@@ -94,7 +95,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label4.Location = new System.Drawing.Point(18, 162);
+            this.label4.Location = new System.Drawing.Point(18, 202);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(69, 25);
             this.label4.TabIndex = 5;
@@ -104,7 +105,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label5.Location = new System.Drawing.Point(18, 418);
+            this.label5.Location = new System.Drawing.Point(18, 431);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(178, 25);
             this.label5.TabIndex = 6;
@@ -114,7 +115,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label6.Location = new System.Drawing.Point(18, 229);
+            this.label6.Location = new System.Drawing.Point(18, 258);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(178, 25);
             this.label6.TabIndex = 7;
@@ -123,7 +124,7 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button3.Location = new System.Drawing.Point(387, 289);
+            this.button3.Location = new System.Drawing.Point(387, 313);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(85, 34);
             this.button3.TabIndex = 8;
@@ -135,7 +136,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label2.Location = new System.Drawing.Point(18, 294);
+            this.label2.Location = new System.Drawing.Point(18, 318);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(152, 25);
             this.label2.TabIndex = 9;
@@ -144,7 +145,7 @@
             // cbMileageUse
             // 
             this.cbMileageUse.FormattingEnabled = true;
-            this.cbMileageUse.Location = new System.Drawing.Point(213, 294);
+            this.cbMileageUse.Location = new System.Drawing.Point(210, 323);
             this.cbMileageUse.Name = "cbMileageUse";
             this.cbMileageUse.Size = new System.Drawing.Size(121, 20);
             this.cbMileageUse.TabIndex = 10;
@@ -153,7 +154,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label7.Location = new System.Drawing.Point(84, 57);
+            this.label7.Location = new System.Drawing.Point(84, 41);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(300, 21);
             this.label7.TabIndex = 11;
@@ -163,7 +164,7 @@
             // 
             this.lblSeat.AutoSize = true;
             this.lblSeat.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblSeat.Location = new System.Drawing.Point(268, 104);
+            this.lblSeat.Location = new System.Drawing.Point(268, 146);
             this.lblSeat.Name = "lblSeat";
             this.lblSeat.Size = new System.Drawing.Size(72, 25);
             this.lblSeat.TabIndex = 12;
@@ -173,7 +174,7 @@
             // 
             this.lblPlan.AutoSize = true;
             this.lblPlan.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblPlan.Location = new System.Drawing.Point(182, 162);
+            this.lblPlan.Location = new System.Drawing.Point(182, 202);
             this.lblPlan.Name = "lblPlan";
             this.lblPlan.Size = new System.Drawing.Size(73, 25);
             this.lblPlan.TabIndex = 13;
@@ -183,7 +184,7 @@
             // 
             this.lblAvailableMileage.AutoSize = true;
             this.lblAvailableMileage.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblAvailableMileage.Location = new System.Drawing.Point(249, 229);
+            this.lblAvailableMileage.Location = new System.Drawing.Point(249, 258);
             this.lblAvailableMileage.Name = "lblAvailableMileage";
             this.lblAvailableMileage.Size = new System.Drawing.Size(184, 25);
             this.lblAvailableMileage.TabIndex = 14;
@@ -193,7 +194,7 @@
             // 
             this.lblRewardMileage.AutoSize = true;
             this.lblRewardMileage.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblRewardMileage.Location = new System.Drawing.Point(249, 418);
+            this.lblRewardMileage.Location = new System.Drawing.Point(249, 431);
             this.lblRewardMileage.Name = "lblRewardMileage";
             this.lblRewardMileage.Size = new System.Drawing.Size(170, 25);
             this.lblRewardMileage.TabIndex = 15;
@@ -203,7 +204,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label12.Location = new System.Drawing.Point(18, 354);
+            this.label12.Location = new System.Drawing.Point(18, 374);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(133, 25);
             this.label12.TabIndex = 16;
@@ -213,7 +214,7 @@
             // 
             this.lblFinalPrice.AutoSize = true;
             this.lblFinalPrice.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblFinalPrice.Location = new System.Drawing.Point(249, 354);
+            this.lblFinalPrice.Location = new System.Drawing.Point(249, 374);
             this.lblFinalPrice.Name = "lblFinalPrice";
             this.lblFinalPrice.Size = new System.Drawing.Size(119, 25);
             this.lblFinalPrice.TabIndex = 17;
@@ -223,17 +224,28 @@
             // 
             this.lblPlanPrice.AutoSize = true;
             this.lblPlanPrice.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblPlanPrice.Location = new System.Drawing.Point(268, 162);
+            this.lblPlanPrice.Location = new System.Drawing.Point(268, 202);
             this.lblPlanPrice.Name = "lblPlanPrice";
             this.lblPlanPrice.Size = new System.Drawing.Size(116, 25);
             this.lblPlanPrice.TabIndex = 18;
             this.lblPlanPrice.Text = "lblPlanPrice";
+            // 
+            // lblReservationTimeInfo
+            // 
+            this.lblReservationTimeInfo.AutoSize = true;
+            this.lblReservationTimeInfo.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lblReservationTimeInfo.Location = new System.Drawing.Point(22, 91);
+            this.lblReservationTimeInfo.Name = "lblReservationTimeInfo";
+            this.lblReservationTimeInfo.Size = new System.Drawing.Size(219, 25);
+            this.lblReservationTimeInfo.TabIndex = 19;
+            this.lblReservationTimeInfo.Text = "lblReservationTimeInfo";
             // 
             // PaymentCheckUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 561);
+            this.Controls.Add(this.lblReservationTimeInfo);
             this.Controls.Add(this.lblPlanPrice);
             this.Controls.Add(this.lblFinalPrice);
             this.Controls.Add(this.label12);
@@ -280,5 +292,6 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label lblFinalPrice;
         private System.Windows.Forms.Label lblPlanPrice;
+        private System.Windows.Forms.Label lblReservationTimeInfo;
     }
 }

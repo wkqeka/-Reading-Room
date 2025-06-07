@@ -86,7 +86,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BoundaryClass\ReservationUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BoundaryClass\ReservationUI.Designer.cs">
+      <DependentUpon>ReservationUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="ControlClass\CalculateMileage.cs" />
+    <Compile Include="ControlClass\ReservationControl.cs" />
     <Compile Include="ControlClass\SeatInquiryControl.cs" />
     <Compile Include="EntityClass\Account.cs" />
     <Compile Include="ControlClass\AccountControl.cs" />
@@ -112,6 +119,7 @@
       <DependentUpon>PaymentUI.cs</DependentUpon>
     </Compile>
     <Compile Include="EntityClass\PricingPlan.cs" />
+    <Compile Include="EntityClass\Reservation.cs" />
     <Compile Include="EntityClass\Seat.cs" />
     <Compile Include="BoundaryClass\SeatInquiryUI.cs">
       <SubType>Form</SubType>
@@ -153,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BoundaryClass\PaymentUI.resx">
       <DependentUpon>PaymentUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BoundaryClass\ReservationUI.resx">
+      <DependentUpon>ReservationUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
