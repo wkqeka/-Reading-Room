@@ -1,6 +1,6 @@
 ﻿namespace Studyroom_kiosk
 {
-    partial class LoginSignInUI
+    partial class NewAccountUI
     {
         /// <summary>
         /// Required designer variable.

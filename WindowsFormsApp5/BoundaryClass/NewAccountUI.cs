@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace Studyroom_kiosk
 {
-    public partial class LoginSignInUI : Form
+    public partial class NewAccountUI : Form
     {
-        private AccountController accountController = new AccountController();
+        private AccountControl accountController = new AccountControl();
 
-        public LoginSignInUI()
+        public NewAccountUI()
         {
             InitializeComponent();
         }

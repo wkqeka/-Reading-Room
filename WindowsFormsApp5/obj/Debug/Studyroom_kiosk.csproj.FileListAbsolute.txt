@@ -25,7 +25,6 @@ C:\Users\admin\Desktop\소웨공 프로그램들\STW\WindowsFormsApp5\bin\Debug\
 C:\Users\admin\Desktop\소웨공 프로그램들\STW\WindowsFormsApp5\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\admin\Desktop\소웨공 프로그램들\STW\WindowsFormsApp5\bin\Debug\System.ValueTuple.xml
 C:\Users\admin\Desktop\소웨공 프로그램들\STW\WindowsFormsApp5\obj\Debug\Studyroom_kiosk.csproj.AssemblyReference.cache
-C:\Users\admin\Desktop\소웨공 프로그램들\STW\WindowsFormsApp5\obj\Debug\Studyroom_kiosk.LoginSignInUI.resources
 C:\Users\admin\Desktop\소웨공 프로그램들\STW\WindowsFormsApp5\obj\Debug\Studyroom_kiosk.LoginUI.resources
 C:\Users\admin\Desktop\소웨공 프로그램들\STW\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Properties.Resources.resources
 C:\Users\admin\Desktop\소웨공 프로그램들\STW\WindowsFormsApp5\obj\Debug\Studyroom_kiosk.SeatInquiryUI.resources
@@ -35,4 +34,7 @@ C:\Users\admin\Desktop\소웨공 프로그램들\STW\WindowsFormsApp5\obj\Debug\
 C:\Users\admin\Desktop\소웨공 프로그램들\STW\WindowsFormsApp5\obj\Debug\Studyroo.044A09A6.Up2Date
 C:\Users\admin\Desktop\소웨공 프로그램들\STW\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.exe
 C:\Users\admin\Desktop\소웨공 프로그램들\STW\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.pdb
-C:\Users\admin\Desktop\소웨공 프로그램들\STW\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.MainUI.resources
+C:\Users\admin\Desktop\소웨공 프로그램들\STW\WindowsFormsApp5\obj\Debug\Studyroom_kiosk.NewAccountUI.resources
+C:\Users\admin\Desktop\소웨공 프로그램들\STW\WindowsFormsApp5\obj\Debug\Studyroom_kiosk.MainUI.resources
+C:\Users\admin\Desktop\소웨공 프로그램들\STW\WindowsFormsApp5\obj\Debug\Studyroom_kiosk.PaymentCheckUI.resources
+C:\Users\admin\Desktop\소웨공 프로그램들\STW\WindowsFormsApp5\obj\Debug\Studyroom_kiosk.PaymentUI.resources

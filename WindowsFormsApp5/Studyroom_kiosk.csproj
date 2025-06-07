@@ -86,51 +86,73 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Account.cs" />
-    <Compile Include="AccountController.cs" />
-    <Compile Include="DatabaseManager.cs" />
-    <Compile Include="MainUI.cs">
+    <Compile Include="ControlClass\CalculateMileage.cs" />
+    <Compile Include="ControlClass\SeatInquiryControl.cs" />
+    <Compile Include="EntityClass\Account.cs" />
+    <Compile Include="ControlClass\AccountControl.cs" />
+    <Compile Include="ControlClass\DatabaseManager.cs" />
+    <Compile Include="BoundaryClass\MainUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainUI.Designer.cs">
+    <Compile Include="BoundaryClass\MainUI.Designer.cs">
       <DependentUpon>MainUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="Seat.cs" />
-    <Compile Include="SeatInquiryUI.cs">
+    <Compile Include="EntityClass\Payment.cs" />
+    <Compile Include="BoundaryClass\PaymentCheckUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SeatInquiryUI.Designer.cs">
+    <Compile Include="BoundaryClass\PaymentCheckUI.Designer.cs">
+      <DependentUpon>PaymentCheckUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlClass\PaymentControl.cs" />
+    <Compile Include="BoundaryClass\PaymentUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BoundaryClass\PaymentUI.Designer.cs">
+      <DependentUpon>PaymentUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EntityClass\PricingPlan.cs" />
+    <Compile Include="EntityClass\Seat.cs" />
+    <Compile Include="BoundaryClass\SeatInquiryUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BoundaryClass\SeatInquiryUI.Designer.cs">
       <DependentUpon>SeatInquiryUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginController.cs" />
-    <Compile Include="LoginSignInUI.cs">
+    <Compile Include="BoundaryClass\NewAccountUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginSignInUI.Designer.cs">
-      <DependentUpon>LoginSignInUI.cs</DependentUpon>
+    <Compile Include="BoundaryClass\NewAccountUI.Designer.cs">
+      <DependentUpon>NewAccountUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginUI.cs">
+    <Compile Include="BoundaryClass\LoginUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginUI.Designer.cs">
+    <Compile Include="BoundaryClass\LoginUI.Designer.cs">
       <DependentUpon>LoginUI.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ShowStatus.cs">
+    <Compile Include="BoundaryClass\ShowStatus.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ShowStatus.Designer.cs">
+    <Compile Include="BoundaryClass\ShowStatus.Designer.cs">
       <DependentUpon>ShowStatus.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="LoginSignInUI.resx">
-      <DependentUpon>LoginSignInUI.cs</DependentUpon>
+    <EmbeddedResource Include="BoundaryClass\NewAccountUI.resx">
+      <DependentUpon>NewAccountUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginUI.resx">
+    <EmbeddedResource Include="BoundaryClass\LoginUI.resx">
       <DependentUpon>LoginUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainUI.resx">
+    <EmbeddedResource Include="BoundaryClass\MainUI.resx">
       <DependentUpon>MainUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BoundaryClass\PaymentCheckUI.resx">
+      <DependentUpon>PaymentCheckUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BoundaryClass\PaymentUI.resx">
+      <DependentUpon>PaymentUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -141,10 +163,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="SeatInquiryUI.resx">
+    <EmbeddedResource Include="BoundaryClass\SeatInquiryUI.resx">
       <DependentUpon>SeatInquiryUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ShowStatus.resx">
+    <EmbeddedResource Include="BoundaryClass\ShowStatus.resx">
       <DependentUpon>ShowStatus.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Oracle.DataAccess.Common.Configuration.Section.xsd">

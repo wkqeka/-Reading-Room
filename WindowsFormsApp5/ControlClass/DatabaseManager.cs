@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using Oracle.ManagedDataAccess.Client;
 using Studyroom_kiosk;
 
@@ -100,21 +102,19 @@ namespace Studyroom_kiosk
                 using (var conn = new OracleConnection(connectionString))
                 {
                     conn.Open();
-                    string sql = "SELECT seat_number, status, seat_type FROM SEATS";
+                    string sql = "SELECT seat_id, seat_number, status, seat_type FROM SEATS";
 
                     using (var cmd = new OracleCommand(sql, conn))
                     using (var reader = cmd.ExecuteReader())
                     {
                         while (reader.Read())
                         {
-                            var seat = new Seat(
+                            seats.Add(new Seat(
+                                Convert.ToInt32(reader["seat_id"]),
                                 reader["seat_number"].ToString(),
                                 reader["status"].ToString(),
-                                reader["seat_type"].ToString(),
-                                "없음",  // reserved_time은 아직 조회하지 않음
                                 reader["seat_type"].ToString()
-                            );
-                            seats.Add(seat);
+                            ));
                         }
                     }
                 }
@@ -126,5 +126,86 @@ namespace Studyroom_kiosk
 
             return seats;
         }
+
+        public static List<PricingPlan> GetPricingPlans()
+        {
+            var result = new List<PricingPlan>();
+            using (var conn = new OracleConnection(connectionString))
+            {
+                conn.Open();
+                string sql = "SELECT plan_id, name, duration_min, price, description FROM PLANS";
+                using (var cmd = new OracleCommand(sql, conn))
+                using (var reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        result.Add(new PricingPlan
+                        {
+                            PlanId = Convert.ToInt32(reader["plan_id"]),
+                            Name = reader["name"].ToString(),
+                            DurationMin = Convert.ToInt32(reader["duration_min"]),
+                            Price = Convert.ToDecimal(reader["price"]),
+                            Description = reader["description"].ToString()
+                        });
+                    }
+                }
+            }
+            return result;
+        }
+
+        public static decimal GetUserMileage(string userId)
+        {
+            using (var conn = new OracleConnection(connectionString))
+            {
+                conn.Open();
+                string sql = "SELECT total_mileage FROM MILEAGE_SUMMARY WHERE user_id = :id";
+                using (var cmd = new OracleCommand(sql, conn))
+                {
+                    cmd.Parameters.Add(new OracleParameter("id", userId));
+                    var result = cmd.ExecuteScalar();
+                    return result != null ? Convert.ToDecimal(result) : 0;
+                }
+            }
+        }
+
+        public static bool ExecuteReserveAndPayProcedure(string userId, int seatId, int planId, DateTime startTime, DateTime endTime, int mileageUsed)
+        {
+            try
+            {
+                using (OracleConnection conn = new OracleConnection(connectionString))
+                {
+                    conn.Open();
+                    using (OracleCommand cmd = new OracleCommand("PROC_RESERVE_AND_PAY", conn))
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+
+                        cmd.BindByName = true;
+
+                        cmd.Parameters.Add("p_user_id", OracleDbType.Int32).Value = userId;
+                        cmd.Parameters.Add("p_seat_id", OracleDbType.Int32).Value = seatId;
+                        cmd.Parameters.Add("p_plan_id", OracleDbType.Int32).Value = planId;
+                        cmd.Parameters.Add("p_start_time", OracleDbType.TimeStamp).Value = startTime;
+                        cmd.Parameters.Add("p_end_time", OracleDbType.TimeStamp).Value = endTime;
+                        cmd.Parameters.Add("p_mileage_use", OracleDbType.Int32).Value = mileageUsed;
+
+                        Console.WriteLine($"[DEBUG] 호출값: userId={userId}, seatId={seatId}, planId={planId}, start={startTime}, end={endTime}, mileage={mileageUsed}");
+
+                        cmd.ExecuteNonQuery();
+                        return true;
+                    }
+                }
+            }
+            catch (OracleException ex)
+            {
+                MessageBox.Show($"[Oracle ERROR] {ex.Message}", "Oracle 오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"[General ERROR] {ex.Message}", "일반 오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+        }
+
     }
 }

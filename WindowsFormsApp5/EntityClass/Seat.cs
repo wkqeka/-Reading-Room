@@ -8,18 +8,17 @@ namespace Studyroom_kiosk
 {
     public class Seat
     {
-        public string SeatId { get; set; }
+        public int SeatId { get; set; }
+        public string SeatNumber { get; set; }
         public string Status { get; set; }
-        public string Purpose { get; set; }
-        public string ReservedTime { get; set; }
         public string SeatType { get; set; }
+        public string ReservedTime { get; set; } = "없음";
 
-        public Seat(string id, string status, string purpose, string reservedTime = "없음", string seatType = "")
+        public Seat(int seatId, string seatNumber, string status, string seatType)
         {
-            SeatId = id;
+            SeatId = seatId;
+            SeatNumber = seatNumber;
             Status = status;
-            Purpose = purpose;
-            ReservedTime = reservedTime;
             SeatType = seatType;
         }
     }

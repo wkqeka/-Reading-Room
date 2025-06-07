@@ -7,25 +7,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Collections.Specialized.BitVector32;
 
 namespace Studyroom_kiosk
 {
     public partial class ShowStatus : Form
     {
+        private string userId;
         private Seat seat;
+        public bool IsSeatOccupied { get; set; } = false;
 
-        public ShowStatus(Seat selectedSeat)
+        public ShowStatus(string userId, Seat selectedSeat)
         {
             InitializeComponent();
-            seat = selectedSeat;
-            LoadSeatInfo();
+            this.userId = userId;
+            this.seat = selectedSeat;
         }
 
         private void LoadSeatInfo()
         {
             lblSeatId.Text = $"ID: {seat.SeatId}";
             lblStatus.Text = $"상태: {seat.Status}";
-            lblPurpose.Text = $"설명: {seat.Purpose}";
+            lblPurpose.Text = $"유형: {seat.SeatType}";
             lblReservedTime.Text = seat.Status == "예약 완료" ? $"예약 시간: {seat.ReservedTime}" : "";
         }
 
@@ -37,8 +40,20 @@ namespace Studyroom_kiosk
 
         private void btnPayment_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("결제창으로 이동합니다 (미구현)");
+            var paymentForm = new PaymentUI(userId, seat);
+            paymentForm.Show();
             this.Close();
+        }
+
+        private void ShowStatus_Load(object sender, EventArgs e)
+        {
+            LoadSeatInfo();
+
+            if (IsSeatOccupied)
+            {
+                btnPayment.Enabled = false;  
+                btnPayment.Text = "사용 중 (결제 불가)";
+            }
         }
     }
 }

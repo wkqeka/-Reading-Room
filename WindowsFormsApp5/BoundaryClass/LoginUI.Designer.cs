@@ -30,8 +30,8 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.idBox = new System.Windows.Forms.TextBox();
-            this.passwordBox = new System.Windows.Forms.TextBox();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.newAccountButton = new System.Windows.Forms.Button();
             this.loginButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -54,19 +54,19 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "비밀번호";
             // 
-            // idBox
+            // txtId
             // 
-            this.idBox.Location = new System.Drawing.Point(380, 149);
-            this.idBox.Name = "idBox";
-            this.idBox.Size = new System.Drawing.Size(135, 21);
-            this.idBox.TabIndex = 2;
+            this.txtId.Location = new System.Drawing.Point(380, 149);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(135, 21);
+            this.txtId.TabIndex = 2;
             // 
-            // passwordBox
+            // txtPassword
             // 
-            this.passwordBox.Location = new System.Drawing.Point(380, 209);
-            this.passwordBox.Name = "passwordBox";
-            this.passwordBox.Size = new System.Drawing.Size(135, 21);
-            this.passwordBox.TabIndex = 3;
+            this.txtPassword.Location = new System.Drawing.Point(380, 209);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(135, 21);
+            this.txtPassword.TabIndex = 3;
             // 
             // newAccountButton
             // 
@@ -95,8 +95,8 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.loginButton);
             this.Controls.Add(this.newAccountButton);
-            this.Controls.Add(this.passwordBox);
-            this.Controls.Add(this.idBox);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtId);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "LoginUI";
@@ -110,8 +110,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox idBox;
-        private System.Windows.Forms.TextBox passwordBox;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button newAccountButton;
         private System.Windows.Forms.Button loginButton;
     }

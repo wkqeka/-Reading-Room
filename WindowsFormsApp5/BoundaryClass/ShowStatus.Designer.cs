@@ -111,6 +111,7 @@
             this.Controls.Add(this.lblSeatId);
             this.Name = "ShowStatus";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.ShowStatus_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
